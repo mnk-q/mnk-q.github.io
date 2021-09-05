@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel = "stylesheet" href="style.css" />
+
+
+    <style>
+        #array{
+            margin: 10px 0px 10px 0px;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>  
+    <div class="container">
+        <h1 class="display-3 text-center">Sorting Visualizer</h1>
+        <div class="container former align-items-center">
+            <div class=" display-inline box">
+                Sorting Algorithm: 
+                <select name="algo" id="sortingAlgo">
+                    <option value="insertion">Insertion Sort</option>
+                    <option value="quick">Quick Sort</option>
+                    <option value="selection">Selection Sort</option>
+                    <option value="bubble">Bubble Sort</option>
+                </select>
+
+                
+            </div>
+
+            <input id="array" type="text" placeholder="Insert Space Seperated Integers" />
+            
+            <br>
+            <button onclick="generateArray()" class="btn btn-outline-primary">Generate random array</button>
+            <button onclick="validate()" class="btn btn-primary">Sort!</button>
+ 
+
+        </div>
+        
+
+        <div class="text-center">
+            <div class="card">
+                <div class="card-header">
+                    Simulation
+                </div>
+                <div class="card-body">
+                    <div class="numbers d-inline-flex ">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src = "algos.js"></script>
+    <script src = "drawing.js"></script>
+    <script src = "sorting.js"></script>
+</body>
+</html>

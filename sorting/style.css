@@ -1,0 +1,31 @@
+.block{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.pile{
+    background-color: black;
+    height: 5px;
+    width: 20px;
+}
+.former{
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+    
+}
+.algo{
+    margin: 0px 0px 0px 5px;
+}
+
+.un1{
+    background-color: red ;
+    height: 5px;
+    width: 20px;
+}
+.un2{
+    background-color: green;
+    height: 5px;
+    width: 20px;
+}
