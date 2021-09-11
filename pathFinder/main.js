@@ -9,8 +9,8 @@ var start
 var end 
 
 var grid = new Array(rows)
-var rA = [0,1,0,-1,1,1,-1,-1]
-var rB = [1,0,-1,0,1,-1,-1,1]
+var rA = [0,1,0,-1]
+var rB = [1,0,-1,0]
 
 
 // Cell Initialization
@@ -261,10 +261,10 @@ async function astar() {
         
         var current = openSet.dequeue().element
         openMap.set(current.id, false)
-        console.log("LOOP")
+        
         if(current == end) {
             // Path Is Finished
-            console.log("Path Found")
+            
             drawPath(end, "yellow")
             break
         }

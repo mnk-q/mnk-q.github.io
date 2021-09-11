@@ -22,13 +22,15 @@ function draw(grid, rows, cols){
 }
 
 async function drawPath(node, col="yellow") {
-
+    var cot = 0
     while(node!=undefined) {
+        cot++
         node.show(col)
-        console.log(node.id)
+        
         await sleep(10)
         node = node.parent
     }
+    console.log(cot)
 }
 
 function valid(i, j, rows, cols){
