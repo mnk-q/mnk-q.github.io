@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #050032;
+}
+.content{
+    height: 100px;
+    width: 99%;
+    padding: 30px;
+    display: inline-flex;
+}      
+input{
+    height: 50px;
+    width: 300px;
+    padding-left: 10px;
+    margin: 5px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 10px rgb(255, 253, 253),
+                inset -5px -5px 5px rgb(84, 83, 83),
+                2px 2px 10px black;
+}
+button{
+    margin-top: 5px;
+    margin-left: 40px;
+    cursor: pointer;
+    height: 50px;
+    width: 250px;
+    font-size: 1.2rem;
+    background-color: rgb(12, 92, 17);
+    border-radius: 10px;
+    color: white;
+    box-shadow: inset 2px 2px 3px  white,
+                inset -5px -5px 3px rgb(1, 39, 1);
+}
+button:hover{
+    box-shadow: none;
+}
+table{
+    margin: 10px auto;
+    height: 400px;
+    width: 1000px;
+    border-collapse: collapse;
+}
+th{
+    border: 1px solid black;
+    width: 300px;
+    font-size: larger;
+    background-color: #4472c4;
+    color: white;
+}
+td{
+    border: 1px solid black;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bolder;
+}
+tr:nth-child(odd) td{
+    width: 500px;
+    background-color: white;
+}
+tr:nth-child(even) td{
+    width: 500px;
+    background-color: #d9e1f2;
+}

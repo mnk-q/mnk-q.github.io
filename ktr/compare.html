@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/compare.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <title>Compare</title>
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html"><img src="./assets/map.jpg" alt="icon" class="navIcon"></a>
+
+        <ul>
+
+            <li><a href="./tabular.html">Tabular View</a></li>
+            <li><a href="./graphical.html">Graphical View</a></li>
+            <li><a href="./search.html">Search</a></li>
+        </ul>
+    </nav>
+    <div class="content" id="content">
+        <input type="text" name="state1" id="state1" placeholder="Enter first state" required>
+        <input type="text" name="state2" id="state2" placeholder="Enter second state" required>
+        <button type="submit" onclick="myfun()">Go!!!</button>
+    </div>
+    <table id="mytable">
+        
+    </table>
+    <script src="./js/compare.js"></script>
+</body>
+</html>
